@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './components/students/students.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MaterialExampleModule} from '../material.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +16,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     NoopAnimationsModule,
+    MaterialExampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

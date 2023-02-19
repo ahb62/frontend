@@ -1,3 +1,4 @@
 <app-students 
-    [studentsActive]="students_active">
+    *ngFor="let student of students_active"
+    [studentsActive]="student">
 </app-students>

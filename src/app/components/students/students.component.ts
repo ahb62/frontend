@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Student } from '../../models/students.model';
+
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
