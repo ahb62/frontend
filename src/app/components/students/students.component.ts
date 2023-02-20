@@ -1,13 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Student } from '../../models/students.model';
-
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent {
-  displayedColumns: string[] = ['ID', 'Active', 'Grades', 'Name', 'Gender', 'Class', 'Club', 'Persona', 'BreastSize', 'Strength', 'Hairstyle', 'Color', 'Stockings', 'Accesory'];
+  displayedColumns: string[] = ['ID', 'Active', 'Grades', 'Name', 'Gender', 'Class', 'Club', 'Persona', 'BreastSize', 'Strength', 'Hairstyle', 'Color', 'Stockings', 'Accessory'];
 
   @Input() studentsActive: Student = {
     ID: 0,
@@ -30,4 +29,8 @@ export class StudentsComponent {
       ScheduleAction: ""
     
   };
+  consoleando() {  
+    console.log(this.studentsActive);
+  }
 }
+
